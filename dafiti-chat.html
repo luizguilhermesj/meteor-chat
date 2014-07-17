@@ -1,0 +1,39 @@
+<head>
+  <title>Chat</title>
+</head>
+
+<body>
+  <div id="outer">
+    {{> chat}}
+  </div>
+</body>
+
+<template name="chat">
+  {{loginButtons}}
+  {{#if currentUser}}
+    <div class="users">
+      {{#each users}}
+        {{> user}}
+      {{/each}}
+    </div>
+    <div id="chat" class="chat">
+      {{#each chat_message}}
+        {{> message}}
+      {{/each}}
+    </div>
+    <div class="send-message">
+      <textarea id="message" class="message"></textarea>
+      <button id="send-button" class="send-button">Send</button>
+    </div>
+  {{/if}}
+</template>
+
+<template name="user">
+    <span class="name {{userActive}}">
+    {{username}}
+    </span>
+</template>
+
+<template name="message">
+    <br><span class="message-body">{{name}}: {{message}}</span>
+</template>

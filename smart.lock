@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "user-status": {}
+    },
+    "packages": {
+      "user-status": {
+        "git": "https://github.com/mizzao/meteor-user-status.git",
+        "tag": "v0.2.0",
+        "commit": "e18cc48440710d0ac23bd1a578974f9142226bf4"
+      }
+    }
+  }
+}

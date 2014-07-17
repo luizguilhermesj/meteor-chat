@@ -1,0 +1,40 @@
+/* CSS declarations go here */
+.chat{
+	border: 1px solid black;
+	position: relative;
+	height: 400px;
+	width: 79%;
+	overflow-y: scroll;
+	display: inline-block;
+}
+.users{
+	border: 1px solid black;
+	position: relative;
+	height: 400px;
+	width: 19%;
+	overflow: scroll;
+	display: inline-block;
+	color: pink;
+	font-weight: bold;
+}
+#login-buttons{
+	display: block;
+}
+.name{
+	display: block;
+}
+#message{
+	width: 79%;
+	height: 100px;
+	float: left;
+}
+#send-button{
+	margin: 5px;
+	display: inline-block;
+	height: 100px;
+	width: 19%;
+	float: left;
+}
+.name.active {
+	color: green;
+}
